@@ -32,7 +32,7 @@ const GameObject = function (attrs) {
   this .dimensions = attrs .dimensions;
 };
 
-GameObject .prototype .destroy = function () {
+GameObject.prototype .destroy = function () {
   return (`${this .name} was removed from the game.`);
 };
 
@@ -48,7 +48,9 @@ const CharacterStats = function (attrs) {
   this .healthPoints = attrs .healthPoints;
 };
 
-CharacterStats .prototype .takeDamage = function () {
+CharacterStats.prototype = Object .create (GameObject.prototype)
+
+CharacterStats.prototype .takeDamage = function () {
   return `${this .name} took damage.`;
 };
 
@@ -69,7 +71,9 @@ const Humanoid = function (attrs) {
   this .language = attrs .language;
 };
 
-Humanoid .prototype .greet = function () {
+Humanoid.prototype = Object .create (CharacterStats.prototype);
+
+Humanoid.prototype .greet = function () {
   return (`${this .name} offers a greeting in ${this .language}.`);
 };
 
