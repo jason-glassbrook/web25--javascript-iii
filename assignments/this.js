@@ -1,15 +1,16 @@
-/* The for principles of "this";
-* in your own words. explain the four principle for the "this" keyword below.
-*
-* 1. When used in the global context and not using "use strict", then `this` refers to the current window (at least in a browser).
-*
-* 2. When used within an object (literal or otherwise), then `this` refers to that object.
-*
-* 3. When an object is created with `new`, then that object's constructor uses `this` to refers to the newly initialized object.
-*
-* 4. When a function `fn`'s `.call()`, `.apply()`, or `.bind()` methods are used, then the first argument of those methods (if provided) is what `this` refers to within `fn`.
-*
-* write out a code example of each explanation above
+/*
+  The for principles of `this`:
+  In your own words. explain the four principle for the `this` keyword below.
+  
+  1. When used in the global context and not using "use strict", then `this` refers to the current window (at least in a browser).
+  
+  2. When used within an object (literal or otherwise), then `this` refers to that object.
+  
+  3. When an object is created with `new`, then that object's constructor uses `this` to refers to the newly initialized object.
+  
+  4. When a function `fn`'s `.call()`, `.apply()`, or `.bind()` methods are used, then the first argument of those methods (if provided) is what `this` refers to within `fn`.
+  
+  Write out a code example of each explanation above.
 */
 
 ///#####################################
