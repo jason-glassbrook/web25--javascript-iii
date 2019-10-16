@@ -33,7 +33,7 @@ const GameObject = function (attrs) {
 };
 
 GameObject .prototype .destroy = function () {
-  return (`${this.name} was removed from the game.`);
+  return (`${this .name} was removed from the game.`);
 };
 
 /*
@@ -49,7 +49,7 @@ const CharacterStats = function (attrs) {
 };
 
 CharacterStats .prototype .takeDamage = function () {
-  return `${this.name} took damage.`;
+  return `${this .name} took damage.`;
 };
 
 /*
@@ -61,6 +61,17 @@ CharacterStats .prototype .takeDamage = function () {
   * should inherit destroy() from GameObject through CharacterStats
   * should inherit takeDamage() from CharacterStats
 */
+
+const Humanoid = function (attrs) {
+  CharacterStats .call (this , attrs);
+  this .team     = attrs .team;
+  this .weapons  = attrs .weapons;
+  this .language = attrs .language;
+};
+
+Humanoid .prototype .greet = function () {
+  return (`${this .name} offers a greeting in ${this .language}.`);
+};
 
 /*
   * Inheritance chain: GameObject -> CharacterStats -> Humanoid
