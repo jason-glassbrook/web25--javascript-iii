@@ -49,13 +49,13 @@ console .log (this);
 heading ("PRINCIPLE 2");
 
 const myImplicitThis = {
-  a : data.a,
-  b : data.b,
-  c : data.c,
-  d : data.d,
+  a : data .a,
+  b : data .b,
+  c : data .c,
+  d : data .d,
   singImplicitly : function () {
     console .log (
-      `${this.a} / ${this.b} / ${this.c} / ${this.d}`
+      `${this .a} / ${this .b} / ${this .c} / ${this .d}`
     );
   }
 };
@@ -78,7 +78,7 @@ const NewThis = function (attrs) {
 
 let singNewly = function (obj) {
   console .log (
-    `${obj.a} / ${obj.b} / ${obj.c} / ${obj.d}`
+    `${obj .a} / ${obj .b} / ${obj .c} / ${obj .d}`
   );
 };
 
@@ -94,7 +94,7 @@ heading ("PRINCIPLE 4");
 
 let singExplicitly = function () {
   console .log (
-    `${this.a} / ${this.b} / ${this.c} / ${this.d}`
+    `${this .a} / ${this .b} / ${this .c} / ${this .d}`
   );
 };
 

@@ -13,7 +13,7 @@
 ///#####################################
 
 function heading (content) {
-  console.log (`\n### ${content} ###\n`);
+  console .log (`\n### ${content} ###\n`);
 }
 
 ///#####################################
@@ -98,7 +98,7 @@ const mage = new Humanoid ({
   name : 'Bruce',
   team : 'Mage Guild',
   weapons : [
-    'Staff of Shamalama',
+    'Staff of Shamalama'
   ],
   language : 'Common Tongue',
 });
@@ -115,7 +115,7 @@ const swordsman = new Humanoid ({
   team : 'The Round Table',
   weapons : [
     'Giant Sword',
-    'Shield',
+    'Shield'
   ],
   language : 'Common Tongue',
 });
@@ -132,7 +132,7 @@ const archer = new Humanoid ({
   team : 'Forest Kingdom',
   weapons : [
     'Bow',
-    'Dagger',
+    'Dagger'
   ],
   language : 'Elvish',
 });
@@ -148,16 +148,16 @@ console .log (archer);
 
 heading ("-> TESTING MESSAGES");
 
-console .log (mage.createdAt); // Today's date
-console .log (archer.dimensions); // { length: 1, width: 2, height: 4 }
-console .log (swordsman.healthPoints); // 15
-console .log (mage.name); // Bruce
-console .log (swordsman.team); // The Round Table
-console .log (mage.weapons); // Staff of Shamalama
-console .log (archer.language); // Elvish
-console .log (archer.greet()); // Lilith offers a greeting in Elvish.
-console .log (mage.takeDamage()); // Bruce took damage.
-console .log (swordsman.destroy()); // Sir Mustachio was removed from the game.
+console .log (mage .createdAt); // Today's date
+console .log (archer .dimensions); // { length: 1, width: 2, height: 4 }
+console .log (swordsman .healthPoints); // 15
+console .log (mage .name); // Bruce
+console .log (swordsman .team); // The Round Table
+console .log (mage .weapons); // Staff of Shamalama
+console .log (archer .language); // Elvish
+console .log (archer .greet ()); // Lilith offers a greeting in Elvish.
+console .log (mage .takeDamage ()); // Bruce took damage.
+console .log (swordsman .destroy ()); // Sir Mustachio was removed from the game.
 
 ///#####################################
 /// STRETCH
