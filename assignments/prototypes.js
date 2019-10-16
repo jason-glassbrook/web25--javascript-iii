@@ -13,7 +13,7 @@
 ///#####################################
 
 function heading (content) {
-  console .log (`\n### ${content} ###\n`);
+  console.log (`\n### ${content} ###\n`);
 }
 
 ///#####################################
@@ -27,13 +27,13 @@ function heading (content) {
 */
 
 const GameObject = function (attrs) {
-  this .createdAt  = attrs .createdAt;
-  this .name       = attrs .name;
-  this .dimensions = attrs .dimensions;
+  this.createdAt  = attrs.createdAt;
+  this.name       = attrs.name;
+  this.dimensions = attrs.dimensions;
 };
 
-GameObject.prototype .destroy = function () {
-  return (`${this .name} was removed from the game.`);
+GameObject.prototype.destroy = function () {
+  return (`${this.name} was removed from the game.`);
 };
 
 /*
@@ -44,14 +44,14 @@ GameObject.prototype .destroy = function () {
 */
 
 const CharacterStats = function (attrs) {
-  GameObject .call (this , attrs);
-  this .healthPoints = attrs .healthPoints;
+  GameObject.call (this , attrs);
+  this.healthPoints = attrs.healthPoints;
 };
 
-CharacterStats.prototype = Object .create (GameObject.prototype)
+CharacterStats.prototype = Object.create (GameObject.prototype)
 
-CharacterStats.prototype .takeDamage = function () {
-  return `${this .name} took damage.`;
+CharacterStats.prototype.takeDamage = function () {
+  return `${this.name} took damage.`;
 };
 
 /*
@@ -65,16 +65,16 @@ CharacterStats.prototype .takeDamage = function () {
 */
 
 const Humanoid = function (attrs) {
-  CharacterStats .call (this , attrs);
-  this .team     = attrs .team;
-  this .weapons  = attrs .weapons;
-  this .language = attrs .language;
+  CharacterStats.call (this , attrs);
+  this.team     = attrs.team;
+  this.weapons  = attrs.weapons;
+  this.language = attrs.language;
 };
 
-Humanoid.prototype = Object .create (CharacterStats.prototype);
+Humanoid.prototype = Object.create (CharacterStats.prototype);
 
-Humanoid.prototype .greet = function () {
-  return (`${this .name} offers a greeting in ${this .language}.`);
+Humanoid.prototype.greet = function () {
+  return (`${this.name} offers a greeting in ${this.language}.`);
 };
 
 /*
@@ -138,26 +138,26 @@ const archer = new Humanoid ({
 });
 
 heading ("-> MAGE");
-console .log (mage);
+console.log (mage);
 
 heading ("-> SWORDSMAN");
-console .log (swordsman);
+console.log (swordsman);
 
 heading ("-> ARCHER");
-console .log (archer);
+console.log (archer);
 
 heading ("-> TESTING MESSAGES");
 
-console .log (mage .createdAt); // Today's date
-console .log (archer .dimensions); // { length: 1, width: 2, height: 4 }
-console .log (swordsman .healthPoints); // 15
-console .log (mage .name); // Bruce
-console .log (swordsman .team); // The Round Table
-console .log (mage .weapons); // Staff of Shamalama
-console .log (archer .language); // Elvish
-console .log (archer .greet ()); // Lilith offers a greeting in Elvish.
-console .log (mage .takeDamage ()); // Bruce took damage.
-console .log (swordsman .destroy ()); // Sir Mustachio was removed from the game.
+console.log (mage.createdAt); // Today's date
+console.log (archer.dimensions); // { length: 1, width: 2, height: 4 }
+console.log (swordsman.healthPoints); // 15
+console.log (mage.name); // Bruce
+console.log (swordsman.team); // The Round Table
+console.log (mage.weapons); // Staff of Shamalama
+console.log (archer.language); // Elvish
+console.log (archer.greet ()); // Lilith offers a greeting in Elvish.
+console.log (mage.takeDamage ()); // Bruce took damage.
+console.log (swordsman.destroy ()); // Sir Mustachio was removed from the game.
 
 ///#####################################
 /// STRETCH

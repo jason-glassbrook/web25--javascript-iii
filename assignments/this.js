@@ -18,7 +18,7 @@
 ///#####################################
 
 function heading (content) {
-  console .log (`\n### ${content} ###\n`);
+  console.log (`\n### ${content} ###\n`);
 }
 
 ///#####################################
@@ -39,7 +39,7 @@ const data = {
 
 heading ("PRINCIPLE 1");
 
-console .log (this);
+console.log (this);
 
 ///#####################################
 /// PRINCIPLE 2
@@ -49,18 +49,18 @@ console .log (this);
 heading ("PRINCIPLE 2");
 
 const myImplicitThis = {
-  a : data .a,
-  b : data .b,
-  c : data .c,
-  d : data .d,
+  a : data.a,
+  b : data.b,
+  c : data.c,
+  d : data.d,
   singImplicitly : function () {
-    console .log (
-      `${this .a} / ${this .b} / ${this .c} / ${this .d}`
+    console.log (
+      `${this.a} / ${this.b} / ${this.c} / ${this.d}`
     );
   }
 };
 
-myImplicitThis .singImplicitly ();
+myImplicitThis.singImplicitly ();
 
 ///#####################################
 /// PRINCIPLE 3
@@ -70,15 +70,15 @@ myImplicitThis .singImplicitly ();
 heading ("PRINCIPLE 3");
 
 const NewThis = function (attrs) {
-  this .a = attrs .a ;
-  this .b = attrs .b ;
-  this .c = attrs .c ;
-  this .d = attrs .d ;
+  this.a = attrs.a ;
+  this.b = attrs.b ;
+  this.c = attrs.c ;
+  this.d = attrs.d ;
 };
 
 let singNewly = function (obj) {
-  console .log (
-    `${obj .a} / ${obj .b} / ${obj .c} / ${obj .d}`
+  console.log (
+    `${obj.a} / ${obj.b} / ${obj.c} / ${obj.d}`
   );
 };
 
@@ -93,10 +93,10 @@ singNewly (myNewThis);
 heading ("PRINCIPLE 4");
 
 let singExplicitly = function () {
-  console .log (
-    `${this .a} / ${this .b} / ${this .c} / ${this .d}`
+  console.log (
+    `${this.a} / ${this.b} / ${this.c} / ${this.d}`
   );
 };
 
 // it's not what you think!
-singExplicitly .apply (data , []);
+singExplicitly.apply (data , []);
