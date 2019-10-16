@@ -9,18 +9,45 @@
 * write out a code example of each explanation above
 */
 
-// Principle 1
+///#####################################
+/// TOOLS
+///#####################################
 
-// code example for Window Binding
+function heading (content) {
+  console.log (`\n### ${content} ###\n`);
+}
 
-// Principle 2
+function nextProblem (content) {
+  n += 1;
+  heading (`${content} ${n}`);
+}
 
-// code example for Implicit Binding
+let n = 0;
 
-// Principle 3
+///#####################################
+/// PRINCIPLE 1
+/// code example for Window Binding
+///#####################################
 
-// code example for New Binding
+nextProblem ("PRINCIPLE");
 
-// Principle 4
+///#####################################
+/// PRINCIPLE 2
+/// code example for Implicit Binding
+///#####################################
 
-// code example for Explicit Binding
+nextProblem ("PRINCIPLE");
+
+///#####################################
+/// PRINCIPLE 3
+/// code example for New Binding
+///#####################################
+
+nextProblem ("PRINCIPLE");
+
+///#####################################
+/// PRINCIPLE 4
+/// code example for Explicit Binding
+///#####################################
+
+nextProblem ("PRINCIPLE");

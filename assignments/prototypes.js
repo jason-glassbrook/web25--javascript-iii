@@ -7,7 +7,24 @@
   
   Each constructor function has unique properties and methods that are defined in their block comments below:
 */
-  
+
+///#####################################
+/// TOOLS
+///#####################################
+
+function heading (content) {
+  console.log (`\n### ${content} ###\n`);
+}
+
+// function nextProblem (content) {
+//   n += 1;
+//   heading (`${content} ${n}`);
+// }
+
+// let n = 0;
+
+///#####################################
+
 /*
   === GameObject ===
   * createdAt
