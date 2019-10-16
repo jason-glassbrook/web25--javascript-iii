@@ -17,37 +17,30 @@ function heading (content) {
   console.log (`\n### ${content} ###\n`);
 }
 
-function nextProblem (content) {
-  n += 1;
-  heading (`${content} ${n}`);
-}
-
-let n = 0;
-
 ///#####################################
 /// PRINCIPLE 1
 /// code example for Window Binding
 ///#####################################
 
-nextProblem ("PRINCIPLE");
+heading ("PRINCIPLE 1");
 
 ///#####################################
 /// PRINCIPLE 2
 /// code example for Implicit Binding
 ///#####################################
 
-nextProblem ("PRINCIPLE");
+heading ("PRINCIPLE 2");
 
 ///#####################################
 /// PRINCIPLE 3
 /// code example for New Binding
 ///#####################################
 
-nextProblem ("PRINCIPLE");
+heading ("PRINCIPLE 3");
 
 ///#####################################
 /// PRINCIPLE 4
 /// code example for Explicit Binding
 ///#####################################
 
-nextProblem ("PRINCIPLE");
+heading ("PRINCIPLE 4");

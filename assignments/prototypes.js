@@ -16,13 +16,6 @@ function heading (content) {
   console.log (`\n### ${content} ###\n`);
 }
 
-// function nextProblem (content) {
-//   n += 1;
-//   heading (`${content} ${n}`);
-// }
-
-// let n = 0;
-
 ///#####################################
 
 /*
